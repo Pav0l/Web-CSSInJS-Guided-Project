@@ -25,6 +25,7 @@ module.exports = {
           loader: 'babel-loader'
         }
       },
+      // this object below makes LESS work with importing a less file into jsx
       {
         test: /\.less$/,
         use: [
