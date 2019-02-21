@@ -1,25 +1,23 @@
 import React from 'react';
+import styled from 'styled-components';
 
+// tag functions (ES6)
+const StyledHeader = styled.header`
+  border: 4px solid ${pr => pr.primary};
+  padding: 10px;
+`;
 
-export default function Playground() {
+export default function Playground({ primary }) {
   return (
-    <header>
+    <StyledHeader primary={primary}>
       <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Blog</a>
       </nav>
-    </header>
+    </StyledHeader>
   );
 }
-
-
-
-
-
-
-
-
 
 
 
